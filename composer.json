@@ -1,5 +1,5 @@
 {
-    "name": "kphoen/rulerz",
+    "name": "mapado/rulerz",
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/K-Phoen/RulerZ",
@@ -32,21 +32,14 @@
     },
     "require": {
         "php": ">=7.1",
-
         "hoa/ruler": "~2.0",
-        "symfony/property-access": "~3.0|~4.0"
+        "symfony/property-access": "~3.0|~4.0|~5.0|~6.0"
     },
     "require-dev": {
         "ext-json": "*",
-
         "mikey179/vfsstream": "~1.4",
-        "coduo/phpspec-data-provider-extension": "~1.0,!=1.0.2",
         "phpspec/phpspec": "~2.0,>=2.4@dev",
-
         "behat/behat": "~3.0",
-
-        "kphoen/rusty": "dev-master",
-
         "liip/rmt": "^1.2"
     },
     "suggest": {
@@ -57,5 +50,8 @@
         "rulerz-php/elasticsearch": "To execute rules against Elasticsearch targets",
         "rulerz-php/doctrine-dbal": "To execute rules against Doctrine DBAL targets",
         "rulerz-php/doctrine-orm": "To execute rules against Doctrine ORM targets"
+    },
+    "replace": {
+        "kphoen/rulerz": "*"
     }
 }

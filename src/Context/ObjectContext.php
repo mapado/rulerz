@@ -40,7 +40,7 @@ class ObjectContext implements \ArrayAccess
     /**
      * {@inheritdoc}
      */
-    public function offsetGet($id)
+    public function offsetGet($id): mixed
     {
         $value = $this->accessor->getValue($this->object, $id);
 
@@ -54,7 +54,7 @@ class ObjectContext implements \ArrayAccess
     /**
      * {@inheritdoc}
      */
-    public function offsetExists($id)
+    public function offsetExists($id): bool
     {
         return $this->accessor->isReadable($this->object, $id);
     }
@@ -62,7 +62,7 @@ class ObjectContext implements \ArrayAccess
     /**
      * {@inheritdoc}
      */
-    public function offsetSet($id, $value)
+    public function offsetSet($id, $value): void
     {
         throw new \RuntimeException('Context is read-only.');
     }
@@ -70,7 +70,7 @@ class ObjectContext implements \ArrayAccess
     /**
      * {@inheritdoc}
      */
-    public function offsetUnset($id)
+    public function offsetUnset($id): void
     {
         throw new \RuntimeException('Context is read-only.');
     }

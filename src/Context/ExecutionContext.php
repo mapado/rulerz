@@ -35,7 +35,7 @@ class ExecutionContext implements \ArrayAccess
      *
      * @return mixed
      */
-    public function offsetGet($key)
+    public function offsetGet($key): mixed
     {
         if (!array_key_exists($key, $this->data)) {
             throw new \RuntimeException(sprintf('Identifier "%s" does not exist in the context.', $key));
@@ -51,7 +51,7 @@ class ExecutionContext implements \ArrayAccess
      *
      * @return bool
      */
-    public function offsetExists($key)
+    public function offsetExists($key): bool
     {
         return array_key_exists($key, $this->data);
     }
@@ -62,7 +62,7 @@ class ExecutionContext implements \ArrayAccess
      * @param string $key   Key.
      * @param mixed  $value Value.
      */
-    public function offsetSet($key, $value)
+    public function offsetSet($key, $value): void
     {
         throw new \LogicException('The execution context is read-only.');
     }
@@ -72,7 +72,7 @@ class ExecutionContext implements \ArrayAccess
      *
      * @param string $key Key.
      */
-    public function offsetUnset($key)
+    public function offsetUnset($key): void
     {
         throw new \LogicException('The execution context is read-only.');
     }

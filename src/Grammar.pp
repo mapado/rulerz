@@ -102,7 +102,7 @@ object_access:
     ::dot:: <identifier> #attribute_access
 
 #array_declaration:
-    ::bracket_:: value() ( ::comma:: value() )* ::_bracket::
+    ::bracket_:: ( value() )? ( ::comma:: value() )* ::_bracket::
 
 #function_call:
     <identifier> ::parenthesis_::

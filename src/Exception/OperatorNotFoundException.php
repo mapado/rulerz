@@ -8,7 +8,7 @@ class OperatorNotFoundException extends \RuntimeException
 {
     private $operator;
 
-    public function __construct(string $operator, $msg, \Exception $previous = null)
+    public function __construct(string $operator, $msg, ?\Exception $previous = null)
     {
         parent::__construct($msg, 0, $previous);
 

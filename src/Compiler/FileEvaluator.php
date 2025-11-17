@@ -15,7 +15,7 @@ class FileEvaluator implements Evaluator
     /**
      * @param string $directory The directory in which the compiled executors are stored. Defaults to the system's temp directory.
      */
-    public function __construct($directory = null, Filesystem $fs = null)
+    public function __construct($directory = null, ?Filesystem $fs = null)
     {
         $this->directory = $directory ?: sys_get_temp_dir();
         $this->fs = $fs ?: new NativeFilesystem();

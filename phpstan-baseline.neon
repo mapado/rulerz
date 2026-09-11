@@ -1,0 +1,61 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Compiler/Compiler.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Context/ObjectContext.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Exception/InvalidAccess.php
+
+		-
+			message: '#^Call to static method load\(\) on an unknown class Hoa\\Compiler\\Llk\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Parser/Parser.php
+
+		-
+			message: '#^Class Hoa\\Ruler\\Exception\\Interpreter does not have a constructor and must be instantiated without any parameters\.$#'
+			identifier: new.noConstructor
+			count: 2
+			path: src/Parser/Parser.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Target/Operators/Definitions.php
+
+		-
+			message: '#^Method RulerZ\\Visitor\\AccessCollectorVisitor\:\:visitAccess\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Visitor/AccessCollectorVisitor.php
+
+		-
+			message: '#^Method RulerZ\\Visitor\\OperatorCollectorVisitor\:\:visitOperator\(\) should return Hoa\\Consistency\\Xcallable but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Visitor/OperatorCollectorVisitor.php
+
+		-
+			message: '#^Method RulerZ\\Visitor\\Visitor\:\:visitAccess\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Visitor/Visitor.php
+
+		-
+			message: '#^Method RulerZ\\Visitor\\Visitor\:\:visitOperator\(\) should return Hoa\\Consistency\\Xcallable but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Visitor/Visitor.php

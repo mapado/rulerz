@@ -12,3 +12,6 @@ behat:
 
 phpspec:
 	php ./bin/phpspec run --ansi  -vvv
+
+phpstan:
+	php ./bin/phpstan analyse

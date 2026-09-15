@@ -26,7 +26,7 @@
         "bin-dir": "bin/"
     },
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
         "hoa/ruler": "~2.0",
         "symfony/property-access": "~3.0|~4.0|~5.0|~6.0|~7.0"
     },

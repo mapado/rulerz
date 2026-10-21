@@ -2,6 +2,10 @@
 VERSION 0  FIXED ELASTICSEARCH-RELATED TARGETS
 ==============================================
 
+   Version 0.23 - Allow symfony/property-access 7
+      21/10/2026 11:29  0.23.1  Silence Symfony DebugClassLoader return type notice on visitors
+         #4 Add explicit @return mixed to visit() implementations
+
    Version 0.21 - Make RulerZ PHP7-only
       18/09/2018 17:15  0.21.1  Ensure that different executors are compiled for different Doctrine QB
          c38ce6a Merge pull request #109 from jdeniau/patch-1

@@ -39,6 +39,8 @@ abstract class GenericVisitor implements RuleVisitor
 
     /**
      * {@inheritdoc}
+     *
+     * @return mixed
      */
     public function visit(VisitorElement $element, &$handle = null, $eldnah = null)
     {

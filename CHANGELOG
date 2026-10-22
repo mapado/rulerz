@@ -4,8 +4,7 @@ VERSION 0  FIXED ELASTICSEARCH-RELATED TARGETS
 
    Version 0.24 - Accept Symfony 8, drop Symfony < 7.4
       22/10/2026 13:23  0.24.0  Accept Symfony 8, drop Symfony < 7.4
-         2731023 Call Hoa\Compiler\Llk\Llk directly so phpstan resolves it
-         c175f25 Accept Symfony 8, drop Symfony < 7.4
+         #5 Accept Symfony 8, drop Symfony < 7.4
 
    Version 0.23 - Allow symfony/property-access 7
       21/10/2026 11:29  0.23.1  Silence Symfony DebugClassLoader return type notice on visitors

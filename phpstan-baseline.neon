@@ -19,12 +19,6 @@ parameters:
 			path: src/Exception/InvalidAccess.php
 
 		-
-			message: '#^Call to static method load\(\) on an unknown class Hoa\\Compiler\\Llk\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/Parser/Parser.php
-
-		-
 			message: '#^Class Hoa\\Ruler\\Exception\\Interpreter does not have a constructor and must be instantiated without any parameters\.$#'
 			identifier: new.noConstructor
 			count: 2
